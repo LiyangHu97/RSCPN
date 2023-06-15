@@ -1,7 +1,7 @@
 # Low-rank Tensor Completion Approach for Incomplete and Corrupted Traffic Data Recovery
 > This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is submitted to IEEE Transactions on Intelligent Transportation Systems.
 >
-> The authors are organizing the experimental files, which will be publicly available soon.
+> The authors are organizing the experimental files, which will be publicly available upon acceptance.
 
 ## Overview
 Data missingness and random anomalies are ubiquitous in intelligent transportation systems (ITS), resulting in poor data quality and usability, which is a major impediment to real-world ITS applications.
@@ -54,7 +54,7 @@ By proposing the tensor Schatten capped p norm, the corresponding relaxed LRTC a
 ```math
 			\begin{split}
 				\min _{\{ \mathcal{X}_{k} \}_{k=1}^{3}, \mathcal{M}}  \sum_{k=1}^{3} \alpha_{k}\left\|\mathcal{X}_{k(k)}\right\|_{S_{p}, \tau}^{p}, \\
-				\text { s.t. } \mathcal{X}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}),
+				\text { s.t. } \mathcal{X}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}).
 			\end{split}
 ```
 
