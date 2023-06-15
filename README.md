@@ -13,7 +13,7 @@ In the real world, the acquisition of trafﬁc state data is often incomplete du
 - Trafﬁc data imputation task: to impute missing values in the partial observations by leveraging the intrinsic lowrankness of trafﬁc spatiotemporal data.
 - Trafﬁc data recovery task: to simultaneously impute missing values and replace potential anomalies with reasonable ones. Note that the anomalies considered in this work are those unstructured outliers caused by data measurement errors.
 
-![framework](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/framework.pdf)
+![framework](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/framework.png)
 
 ## Model Description
 
@@ -35,7 +35,7 @@ where $ \operatorname{rank} \left( \cdot \right)  $ indicates the algebraic rank
 
 Due to the non-convexity and discreteness, to solve the rank minimization problem is generally NP-hard. There are various alternatives (including convex surrogate and non-convex surrogate) for the algebraic rank, of which the Schatten p norm is a flexible one that can well-balance the rank function and the traditional nuclear norm.
 
-![Schatten p norm](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.pdf)
+![Schatten p norm](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png)
 
 ### Tensor Schatten capped p norm (SCPN)
 
@@ -68,10 +68,10 @@ Taking random anomalies into account, we further extend the proposed SCPN into a
 ```math
 			\begin{split}
 				\min _{\{ \mathcal{X}_{k}, \mathcal{E}_{k} \}_{k=1}^{3}, \mathcal{M}}  \sum_{k=1}^{3} \alpha_{k}\left\|\mathcal{X}_{k(k)}\right\|_{S_{p}, \tau}^{p} + \lambda_{k} \| \mathcal{E}_{k} \|_{1}, \\
-				\text { s.t. } \mathcal{X}_{k} + \mathcal{E}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}),
+				\text { s.t. } \mathcal{X}_{k} + \mathcal{E}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}).
 			\end{split}
 ```
-where $ \lambda_{k} $ balances the importance of the two terms.
+
 
 ## Solution algorithm
 
