@@ -57,7 +57,7 @@ By proposing the tensor Schatten capped p norm, the corresponding relaxed LRTC a
 				\text { s.t. } \mathcal{X}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}),
 			\end{split}
 ```
-where $ \mathcal{X}_{k(k)} $ denotes the $ k $-th unfolded matrix of the $ k $-th tensor $ \mathcal{X}_{k} $.
+
 
 
 
@@ -68,10 +68,10 @@ Taking random anomalies into account, we further extend the proposed SCPN into a
 ```math
 			\begin{split}
 				\min _{\{ \mathcal{X}_{k}, \mathcal{E}_{k} \}_{k=1}^{3}, \mathcal{M}}  \sum_{k=1}^{3} \alpha_{k}\left\|\mathcal{X}_{k(k)}\right\|_{S_{p}, \tau}^{p} + \lambda_{k} \| \mathcal{E}_{k} \|_{1}, \\
-				\text { s.t. } \mathcal{X}_{k} + \mathcal{E}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}).
+				\text { s.t. } \mathcal{X}_{k} + \mathcal{E}_{k} = \mathcal{M},		\mathcal{P}_{\Omega}(\mathcal{M})=\mathcal{P}_{\Omega}(\mathcal{Y}),
 			\end{split}
 ```
-
+where $ \lambda_{k} $ balances the importance of the two terms.
 
 ## Solution algorithm
 
