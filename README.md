@@ -21,15 +21,15 @@ In the real world, the acquisition of trafﬁc state data is often incomplete du
 
 The high-dimensional traffic spatiotemporal data detected by $n_1$ sensors at $ n_3 $ time intervals within $ n_2 $ days can be structured as a third-order tensor with the size of $ \mathcal{X} \in \mathbb{R}^{n_1 \times n_2 \times n_3} $, which is assumed to have a low-rank property. Thus, the general mathematical form of LRTC is expressed as:
 
-$$
+```math
 \min _{\mathcal{X}}  \operatorname{rank}(\mathcal{X}), \text { s.t. } \mathcal{P}_{\Omega}(\mathcal{X})=\mathcal{P}_{\Omega}(\mathcal{Y}),
-$$
+```
 
 where $ \operatorname{rank} \left( \cdot \right)  $ indicates the algebraic rank of the tensor $ \mathcal{X} $, $ \Omega $ denotes the set of observed entries, and the operator $ \mathcal{P}_{\Omega} $ represents the orthogonal projection supported on $ \Omega $, i.e.,
 
-$$
-			\left[\mathcal{P}_{\Omega}(\mathcal{X})\right]_{i,j,e}= \begin{cases}x_{i,j,e}, & \text { if }(i,j,e) \in \Omega. \\ 0, & \text {otherwise}.\end{cases}
-$$
+```math
+\left[\mathcal{P}_{\Omega}(\mathcal{X})\right]_{i,j,e}= \begin{cases}x_{i,j,e}, & \text { if }(i,j,e) \in \Omega. \\ 0, & \text {otherwise}.\end{cases}
+```
 
 ### Schatten p norm
 
