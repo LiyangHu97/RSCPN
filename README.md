@@ -1,8 +1,6 @@
 # Low-rank Tensor Completion Approach for Incomplete and Corrupted Traffic Data Recovery
 
-![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)
-
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 
 > This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is submitted to IEEE Transactions on Intelligent Transportation Systems.
 >
@@ -40,7 +38,7 @@ where $ \operatorname{rank} \left( \cdot \right)  $ indicates the algebraic rank
 
 Due to the non-convexity and discreteness, to solve the rank minimization problem is generally NP-hard. There are various alternatives (including convex surrogate and non-convex surrogate) for the algebraic rank, of which the Schatten p norm is a flexible one that can well-balance the rank function and the traditional nuclear norm.
 
-![Schatten p norm](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png){:height="50%" width="50%"}
+<img src="https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png" style="zoom:70%" />
 
 ### Tensor Schatten capped p norm (SCPN)
 
