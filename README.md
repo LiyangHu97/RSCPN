@@ -1,4 +1,9 @@
 # Low-rank Tensor Completion Approach for Incomplete and Corrupted Traffic Data Recovery
+
+![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)
+
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+
 > This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is submitted to IEEE Transactions on Intelligent Transportation Systems.
 >
 > The authors are organizing the experimental files, which will be publicly available upon acceptance.
@@ -35,7 +40,7 @@ where $ \operatorname{rank} \left( \cdot \right)  $ indicates the algebraic rank
 
 Due to the non-convexity and discreteness, to solve the rank minimization problem is generally NP-hard. There are various alternatives (including convex surrogate and non-convex surrogate) for the algebraic rank, of which the Schatten p norm is a flexible one that can well-balance the rank function and the traditional nuclear norm.
 
-![Schatten p norm](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png)
+![Schatten p norm](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png){:height="50%" width="50%"}
 
 ### Tensor Schatten capped p norm (SCPN)
 
@@ -59,8 +64,6 @@ By proposing the tensor Schatten capped p norm, the corresponding relaxed LRTC a
 ```
 
 
-
-
 ### Robust form (RSCPN)
 
 Taking random anomalies into account, we further extend the proposed SCPN into a robust form termed RSCPN, which is formulated as:
@@ -73,9 +76,23 @@ Taking random anomalies into account, we further extend the proposed SCPN into a
 ```
 where $ \lambda_{k} $ balances the importance of the two terms.
 
-## Solution algorithm
 
+## Datasets
 
+We provide two datasets in this repository:
 
+- PEMS speed: The PEMS speed dataset contains 44 days’ (weekdays of May and June, 2012) trafﬁc speed information detected by 228 loop detectors in District 7 of California with a 5-minute time resolution. The corresponding tensor size is `228 ×44×288`.
+- PEMS volume: The PEMS volume dataset includes 62 days’ (Jul.1-Aug.31, 2016) trafﬁc volume information detected by 170 loop detectors in San Bernardino with a 5minute time resolution. The corresponding tensor size is `170×62×288`.
 
-## Dataset
+## Toy examples
+
+We give two toy examples tailored for missing data imputation and corrupted data recovery tasks in the Jupyter Notebook `toy_example_1.ipynb` and `toy_example_2.ipynb`, respectively.
+
+## Reference
+
+If you find this repository useful for your research, please cite our paper.
+
+## License
+
+This work is released under the MIT license.
+
