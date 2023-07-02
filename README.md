@@ -79,7 +79,7 @@ where $ \lambda_{k} $ balances the importance of the two terms.
 
 We provide two datasets in this repository:
 
-- PEMS speed: The PEMS speed dataset contains 44 days’ (weekdays of May and June, 2012) trafﬁc speed information detected by 228 loop detectors in District 7 of California with a 5-minute time resolution. The corresponding tensor size is `228 ×44×288`.
+- PEMS speed: The PEMS speed dataset contains 44 days’ (weekdays of May and June, 2012) trafﬁc speed information detected by 228 loop detectors in District 7 of California with a 5-minute time resolution. The corresponding tensor size is `228×44×288`.
 - PEMS volume: The PEMS volume dataset includes 62 days’ (Jul.1-Aug.31, 2016) trafﬁc volume information detected by 170 loop detectors in San Bernardino with a 5minute time resolution. The corresponding tensor size is `170×62×288`.
 
 ## Toy examples
