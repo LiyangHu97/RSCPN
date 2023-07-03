@@ -16,7 +16,9 @@ In the real world, the acquisition of trafﬁc state data is often incomplete du
 - Trafﬁc data imputation task: to impute missing values in the partial observations by leveraging the intrinsic lowrankness of trafﬁc spatiotemporal data.
 - Trafﬁc data recovery task: to simultaneously impute missing values and replace potential anomalies with reasonable ones. Note that the anomalies considered in this work are those unstructured outliers caused by data measurement errors.
 
-![framework](https://github.com/LiyangHu97/RSCPN/blob/main/Figures/framework.png)
+<p align="center">
+<img align="middle" src="Figures/framework.png" alt="fig1" width="1000">
+</p>
 
 ## Model Description
 
@@ -38,7 +40,9 @@ where $ \operatorname{rank} \left( \cdot \right)  $ indicates the algebraic rank
 
 Due to the non-convexity and discreteness, to solve the rank minimization problem is generally NP-hard. There are various alternatives (including convex surrogate and non-convex surrogate) for the algebraic rank, of which the Schatten p norm is a flexible one that can well-balance the rank function and the traditional nuclear norm.
 
-<img src="https://github.com/LiyangHu97/RSCPN/blob/main/Figures/scp_norm.png" style="zoom:70%" />
+<p align="center">
+<img align="middle" src="Figures/scp_norm.png" alt="fig1" width="600">
+</p>
 
 ### Tensor Schatten capped p norm (SCPN)
 
