@@ -1,10 +1,9 @@
-# Low-rank Tensor Completion Approach for Incomplete and Corrupted Traffic Data Recovery
+# LRTC with SCPN and RSCPN
 
 ![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 
 > This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is submitted to IEEE Transactions on Intelligent Transportation Systems.
 >
-> The authors are organizing the experimental files, which will be publicly available upon acceptance.
 
 ## Overview
 Data missingness and random anomalies are ubiquitous in intelligent transportation systems (ITS), resulting in poor data quality and usability, which is a major impediment to real-world ITS applications.
