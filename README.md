@@ -2,7 +2,7 @@
 
 ![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 
-> This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is submitted to IEEE Transactions on Intelligent Transportation Systems.
+> This is the repository for our paper 'A Flexible and Robust Tensor Completion Approach for Trafﬁc Data Recovery with Low-rankness', which is published in IEEE Transactions on Intelligent Transportation Systems.
 >
 
 ## Overview
@@ -91,7 +91,22 @@ We give two toy examples tailored for missing data imputation and corrupted data
 
 ## Reference
 
-If you find this repository useful for your research, please cite our paper.
+If you find this repository useful for your research, please cite our paper:
+
+```
+@ARTICLE{hu2023flexible,
+  author={Hu, Liyang and Jia, Yuheng and Chen, Weijie and Wen, Longhui and Ye, Zhirui},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={A Flexible and Robust Tensor Completion Approach for Traffic Data Recovery With Low-Rankness}, 
+  year={2024},
+  volume={25},
+  number={3},
+  pages={2558-2572},
+  keywords={Tensors;Spatiotemporal phenomena;Data models;Minimization;Detectors;Data integrity;Traffic control;Spatiotemporal traffic data;missing data imputation;corrupted data recovery;low-rank tensor completion},
+  doi={10.1109/TITS.2023.3319033}}
+```
+
+
 
 ## License
 
